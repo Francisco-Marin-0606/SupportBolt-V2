@@ -22,6 +22,8 @@
     "test:ci": "echo 'Tests deshabilitados temporalmente'"
   },
   "dependencies": {
+    "@octokit/auth-token": "^6.0.0",
+    "@octokit/rest": "^22.0.1",
     "@opentelemetry/core": "^1.30.1",
     "@opentelemetry/instrumentation": "^0.57.2",
     "@opentelemetry/semantic-conventions": "^1.34.0",
@@ -30,6 +32,7 @@
     "@radix-ui/react-slot": "^1.1.2",
     "@radix-ui/react-tooltip": "^1.1.8",
     "@sentry/nextjs": "^9.9.0",
+    "@supabase/supabase-js": "^2.80.0",
     "@tabler/icons": "^3.34.0",
     "@tanstack/react-query": "^5.83.0",
     "@tanstack/react-table": "^8.20.6",
