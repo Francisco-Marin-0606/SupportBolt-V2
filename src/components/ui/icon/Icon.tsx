@@ -1,5 +1,5 @@
 import React from 'react';
-import {
+import { 
   Search,
   Eye,
   PencilLine,
@@ -8,12 +8,18 @@ import {
   ArrowUp,
   ArrowDown,
   MoreVertical,
-  CameraIcon,
-  LucideProps
+  CameraIcon
 } from 'lucide-react';
 
+// Tipo que representa un componente de icono
+type IconComponentProps = {
+  className?: string;
+  size?: number;
+  strokeWidth?: number;
+};
+
 type IconsMap = {
-  [key: string]: React.ForwardRefExoticComponent<Omit<LucideProps, "ref"> & React.RefAttributes<SVGSVGElement>>;
+  [key: string]: React.ComponentType<IconComponentProps>;
 };
 
 const icons: IconsMap = {
