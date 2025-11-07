@@ -1,0 +1,185 @@
+// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    fontFamily: {
+      sans: ["Geist"],
+      heading: ["Geist"],
+      mono: ["Geist"],
+    },
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          light: "#3b82f6",
+          dark: "#ff8c1a",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          light: "#ec4899",
+          dark: "#be185d",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        success: {
+          DEFAULT: "#16a34a",
+          light: "#22c55e",
+          dark: "#15803d",
+        },
+        warning: {
+          DEFAULT: "#ca8a04",
+          light: "#eab308",
+          dark: "#a16207",
+        },
+        error: {
+          DEFAULT: "#dc2626",
+          light: "#ef4444",
+          dark: "#b91c1c",
+        },
+        background: "hsl(var(--background))",
+        text: {
+          primary: "#1a1a1a",
+          secondary: "#4b5563",
+          light: "#9ca3af",
+        },
+        foreground: "hsl(var(--foreground))",
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        chart: {
+          "1": "hsl(var(--chart-1))",
+          "2": "hsl(var(--chart-2))",
+          "3": "hsl(var(--chart-3))",
+          "4": "hsl(var(--chart-4))",
+          "5": "hsl(var(--chart-5))",
+        },
+        sidebar: {
+          DEFAULT: "hsl(var(--sidebar-background))",
+          foreground: "hsl(var(--sidebar-foreground))",
+          primary: "hsl(var(--sidebar-primary))",
+          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+          accent: "hsl(var(--sidebar-accent))",
+          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+          border: "hsl(var(--sidebar-border))",
+          ring: "hsl(var(--sidebar-ring))",
+        },
+      },
+      fontSize: {
+        "display-1": [
+          "4.5rem",
+          {
+            lineHeight: "1.1",
+          },
+        ],
+        "display-2": [
+          "3.75rem",
+          {
+            lineHeight: "1.1",
+          },
+        ],
+        "display-3": [
+          "3rem",
+          {
+            lineHeight: "1.2",
+          },
+        ],
+        h1: [
+          "2.25rem",
+          {
+            lineHeight: "1.2",
+          },
+        ],
+        h2: [
+          "1.875rem",
+          {
+            lineHeight: "1.3",
+          },
+        ],
+        h3: [
+          "1.5rem",
+          {
+            lineHeight: "1.4",
+          },
+        ],
+        h4: [
+          "1.25rem",
+          {
+            lineHeight: "1.4",
+          },
+        ],
+        "body-lg": [
+          "1.125rem",
+          {
+            lineHeight: "1.5",
+          },
+        ],
+        body: [
+          "1rem",
+          {
+            lineHeight: "1.5",
+          },
+        ],
+        "body-sm": [
+          "0.875rem",
+          {
+            lineHeight: "1.5",
+          },
+        ],
+        caption: [
+          "0.75rem",
+          {
+            lineHeight: "1.5",
+          },
+        ],
+      },
+      spacing: {
+        "layout-sm": "1rem",
+        "layout-md": "1.5rem",
+        "layout-lg": "2rem",
+        "layout-xl": "3rem",
+      },
+      borderRadius: {
+        sm: "calc(var(--radius) - 4px)",
+        md: "calc(var(--radius) - 2px)",
+        lg: "var(--radius)",
+        xl: "1rem",
+      },
+      boxShadow: {
+        sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+        md: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+        lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+        strong: "0px 8px 24px rgba(149, 157, 165, 0.2)",
+      },
+      transitionProperty: {
+        width: "width",
+        spacing: "margin, padding",
+      },
+    },
+  },
+  plugins: [require("tailwindcss-animate")],
+};
